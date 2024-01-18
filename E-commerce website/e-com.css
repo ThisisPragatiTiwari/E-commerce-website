@@ -1,0 +1,305 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;  
+}
+
+.navbar{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(15, 15, 15, 0.4);
+    color: #000;    
+}
+
+.brand-title{
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.navbar-links{
+    height: 100%;
+}
+
+.navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li{
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #111;
+    padding: 1rem;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-links li:hover{
+    background-color: #555;
+}
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #111;
+    border-radius: 10px;
+}
+
+.site-intro{
+    height: 364px;
+}
+
+.text-box{
+    height: 364px;
+    background-color: rgb(247, 202, 173);    
+}
+
+.heading{
+    font-size: 32px;
+}
+
+.box{
+    float: left;
+    width: 50%;
+}
+
+.main-img{ 
+    width: 100%;
+    height:363px;
+    object-fit:cover;
+} 
+
+.text{
+    padding: 70px 170px;
+    text-align: left;
+}
+
+.changing-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;  
+}
+
+.img-caption{
+    font-size: 12px;
+    text-align:center;
+    padding-bottom: 3px;
+}
+
+.price{
+    font-size: 12px;
+    text-align: center;
+}
+
+.heading-two{
+    display: block;
+    text-align: center; 
+    font-size: 22px;
+    padding: 0;
+}
+
+.top-offers{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    margin: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.catlogue{
+    text-decoration: none;
+    color: #000;
+}
+
+.contact{
+    padding: 20px;
+    padding-top: 0;
+    padding-left: 50px;
+    margin-bottom: 20px;    
+}
+
+.contact-heading{
+    font-size: 28px;
+}
+
+.contact-para,
+.e-mail{
+    font-size: 22px;
+}
+
+.newsletter{
+    display: flex;
+    width: 30px;
+    background-color: rgb(216, 118, 7);
+    height: 46px;
+    
+}
+
+.one{
+    position: relative;
+    left: 262px;
+    width: 70px;
+}
+
+input{
+    padding: 10px;
+}
+
+.email-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+}
+
+.footer{
+    background-color: rgba(15, 15, 15, 0.4);
+    padding: 20px 0px;
+}
+
+.footer .row-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.row-footer .col-footer ul{
+    padding: 0;
+}
+
+.col-footer .links li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.col-footer .links li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.col-footer .links li a:hover{
+    color:#fff;
+}
+
+.footer-heading{
+    font-size: 20px;
+    color: rgb(167, 90, 3);
+}
+
+.address{
+    width: 180px;
+    font-size: 20px;
+    line-height: 10px;
+}
+
+.header__social{
+    padding:3px;
+}
+
+
+
+@media (max-width: 1240px) {
+    .offer-img{
+        height:300px;
+        width:300px;
+    }
+    .text{
+        padding: 70px 100px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 960px) {
+    .offer-img{
+        height:200px;
+        width:200px;
+    }
+}
+
+@media (max-width: 800px) {
+    .brand-title{
+        margin: .7rem;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button{
+        display: flex;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li{
+        text-align: center;
+    }
+
+    .navbar-links ul li a{
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-links.active{
+        display: flex;
+    }
+
+    .text{
+        padding: 40px 60px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .offer-img{
+        height:150px;
+        width:150px;
+    }
+
+    .top-offers{
+        margin: 0;
+       
+    }
+
+    .col-footer{
+        float: left;
+        width:50%;
+        
+    }
+
+    .footer{
+        padding-left: 20px;
+    }
+}
+
